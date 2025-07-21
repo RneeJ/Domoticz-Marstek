@@ -79,11 +79,12 @@ After this you should see messages, to the topic Marstek ,from the DRV134 in you
   * If not already installed : install the MqttMapper plugin in Domoticz through the hardware panel (use the plugin setup methode).
   * Set up the connection parameters to connect to your MQTT Broker (IP, credentials etc).
   * download the file <i>MqttMapper.json</i> (or copy+paste lines into an existing) and put it in your Domoticz/plugins/MqttMapper directory
+  * NOTE : The items in the published Mqtt message are not used by <i>parameter name</i> but by <i>item number</i> !! 
   * restart Domoticz.
 
 After installing : 2 new devices should be found with ID <b>MPWR</b> (Power in Watts in or out) and <b>MSOC</b> (State of Charge). 
 
-These devices can be incorporated as battery devices in the Energy Dashboard of Domoticz (as shown before).
+These devices can be incorporated as battery devices in the Energy Dashboard of Domoticz (as shown before) or used elsewhere
 
 <b>Other possibilities and use your imagination :</b>
   * Marstek modbus registers are published, you can use these wisely.
