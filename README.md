@@ -50,7 +50,7 @@ When setup : connect to the websetuppage  of the device (http://ip.adres.of.devi
  * On page "EDGE Gateway" select working mode "Light Edge" and set "Merge Collect" and "Periodic Reporting" to "V" set "Reporting interval" to 1 second
  * On page "Ponit" (Point) import file 'drv134.json'
 
-The file 'drv.json' sets the coorect parameters for the registers to (automaticly) poll on the Marstek Venus.
+The file 'drv.json' sets the correct parameters for the registers to (automaticly) poll on the Marstek Venus, you can add and/or change.
 
 After this you should see messages, to the topic Marstek ,from the DRV134 in your MQTT Broker like this :
 
@@ -76,20 +76,20 @@ After this you should see messages, to the topic Marstek ,from the DRV134 in you
 </code>
 
 <b>Installing and setting up Mqttmapper plugin:</b>
-  * Install the MqttMapper plugin in Domoticz through the hardware panel (can through the plugin setup methode).
+  * Install the MqttMapper plugin in Domoticz through the hardware panel (use the plugin setup methode).
   * Set up the connection parameters to connect to your MQTT Broker (IP, credentials etc).
-  * download the file <i>MqttMapper.json</i> or copy+paste line into an existing and but it in your Domoticz/plugins/MqttMapper directory
+  * download the file <i>MqttMapper.json</i> (or copy+paste lines into an existing) and put it in your Domoticz/plugins/MqttMapper directory
   * restart Domoticz.
 
 After installing : 2 new devices should be found with ID <b>MPWR</b> (Power in Watts in or out) and <b>MSOC</b> (State of Charge). 
 
 These devices can be incorporated as battery devices in the Energy Dashboard of Domoticz.
 
-Other possebilities and use your imagination :
-  * Marstek modbus registers are published.
+Other possibilities and use your imagination :
+  * Marstek modbus registers are published, you can use these wisely.
   * Can be used with other modbus devices.
 
-<b>Please let me know </b>
-- 
+<b>Please let me know your solution based on this setup</b>
+
 
 
