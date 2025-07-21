@@ -1,0 +1,26 @@
+{
+  "datas": [
+    {
+      "key": 1,
+      "name": "batterySOC",
+      "sadd": 1,
+      "rtype": 3,
+      "radd": 32104,
+      "dtype": 1,
+      "magn": "1",
+      "report": 0,
+      "ampl": "0"
+    },
+    {
+      "key": 2,
+      "name": "ACpower",
+      "sadd": 1,
+      "rtype": 3,
+      "radd": 32202,
+      "dtype": 3,
+      "magn": "1",
+      "report": 0,
+      "ampl": "0"
+    }
+  ]
+}
