@@ -48,7 +48,7 @@ When setup and visible in your LAN : connect to the websetuppage  of the device 
  * On page "Port parameter" set up workmode als : MQTT
  * On page " MQTT Gateway " setup your Mqtt broker connection details, select under Publish Config : Transparent Transmission and create a topic : <b>Marstek</b> (used in this config, or whatever you want, without slashes)
  * On page "EDGE Gateway" select working mode "Light Edge" and set "Merge Collect" and "Periodic Reporting" to "V" set "Reporting interval" to 1 second
- * On page "Ponit" (Point) import file 'drv134.json'
+ * On page "Ponit" (Point) import file <i>drv134.json</i>
 
 The file 'drv.json' sets the correct parameters for the registers to (automaticly) poll on the Marstek Venus, you can add and/or change.
 
