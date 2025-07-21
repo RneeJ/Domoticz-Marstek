@@ -12,10 +12,12 @@ This is not a software solution but a device configuration of the Pusr-DR134 for
   * Mosquito (or other MQTT Broker) installed and running. Eventualy use a tool like MQTT Explorer to check.
   * PUSR-DR134 : "Lipstick" Size Serial Device Server for RS485 <b>(Light Edge version !)</b> buy for € 15 on the internet.
 
-<b>Hardware toolpath</b> : Marstek Venus V2 -> Modbuscable -> PUSR-DR134 -> LAN -> Computer
-<b>Software toolpath</b> : (transparent :automatic polling of modbus on Marstek Venus V2) -> Lightedge on PUSR-DR134 -> MQTT Broker (Mosquito) -> MqttMapper -> Domoticz
+Toolpath :
+  * <b>Hardware toolpath</b> : Marstek Venus V2 -> Modbuscable -> PUSR-DR134 -> LAN -> Computer
+  * <b>Software toolpath</b> : (transparent :automatic polling of modbus on Marstek Venus V2) -> Lightedge on PUSR-DR134 -> MQTT Broker (Mosquito) -> MqttMapper -> Domoticz
 
-Result : 
+<b>Result : </b>
+
 <img width="497" height="413" alt="Domoticz-result" src="https://github.com/user-attachments/assets/84ad113f-1b7a-42d5-974f-11a1b812934b" />
 
 <b>Setting up the Marstek Venus V2 modbus connection :</b>
@@ -30,24 +32,64 @@ From the twisted cables use :
   * Red to B ;
   * the Black cable connect to - (not GND)
 
-From the cables connected together use the Black for + (5volts)
-The red cable from this 3-set is not used.
-<b>Watch out , Your cable can be different , CHECK it with a voltmeter !!</b>
-
-<b>Installing and settingup Mqttmapper plugin:</b>
-  * Install the MqttMapper plugin through the hardware panel.
-  * Set up the connection parameters to connect to your MQTT Broker.    
+From the cables connected together use : 
+  * Black for + (5volts)
+  * The red cable from this 3-set is not used.
+  * <b>Watch out , Your cable can be different , CHECK it with a voltmeter !!</b>
 
 <b>Setting up PUSR-DR134</b>
 
 When your PUSR-DR134 is connected through the modbus-cable to the Marstek battery it is powered and boots up.
+If not the power is not connected the right way.
 
-Connect and configure your LAN setup with the <b>[Setup Software] EthernetTool V1.4.0(Edge computing) </b> avaiable from the PUSR website.
-When setup connect to the websetuppage  of the device (http://ip.adres.of.device)
+Connect and configure your LAN setup with the <b>[Setup Software] EthernetTool V1.4.0(Edge computing) </b> available from the PUSR website.
+When setup : connect to the websetuppage  of the device (http://ip.adres.of.device)
 
  * On page "Portparameter" set up workmode als : MQTT
- * On page " MQTT Gateway " setup your Mqtt broker connection details, select under Publish Config : Transparent Transmission and create a topic : Marstek (or whatever but without slashes)
+ * On page " MQTT Gateway " setup your Mqtt broker connection details, select under Publish Config : Transparent Transmission and create a topic : <b>Marstek</b> (used in this config, or whatever you want, without slashes)
  * On page "EDGE Gateway" select working mode "Light Edge" and set "Merge Collect" and "Periodic Reporting" to "V" set "Reporting interval" to 1 second
  * On page "Ponit" (Point) import file 'drv134.json'
 
-The file 'drv.json' set
+The file 'drv.json' sets the coorect parameters for the registers to (automaticly) poll on the Marstek Venus.
+
+After this you should see messages, to the topic Marstek ,from the DRV134 in your MQTT Broker like this :
+
+<code>
+{
+  "params": {
+    "dir": "up",
+    "id": "device_id_of_DR134",
+    "r_data": [
+     {
+        "name": "batterySOC",
+        "value": "82",
+        "err": "0"
+      },
+      {
+        "name": "ACpower",
+        "value": "-252",
+        "err": "0"
+      }
+    ]
+  }
+}
+</code>
+
+<b>Installing and setting up Mqttmapper plugin:</b>
+  * Install the MqttMapper plugin in Domoticz through the hardware panel (can through the plugin setup methode).
+  * Set up the connection parameters to connect to your MQTT Broker (IP, credentials etc).
+  * download the file <i>MqttMapper.json</i> or copy+paste line into an existing and but it in your Domoticz/plugins/MqttMapper directory
+  * restart Domoticz.
+
+After installing : 2 new devices should be found with ID <b>MPWR</b> (Power in Watts in or out) and <b>MSOC</b> (State of Charge). 
+
+These devices can be incorporated as battery devices in the Energy Dashboard of Domoticz.
+
+Other possebilities and use your imagination :
+  * Marstek modbus registers are published.
+  * Can be used with other modbus devices.
+
+<b>Please let me know </b>
+- 
+
+
