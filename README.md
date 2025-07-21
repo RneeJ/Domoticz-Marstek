@@ -85,7 +85,7 @@ After installing : 2 new devices should be found with ID <b>MPWR</b> (Power in W
 
 These devices can be incorporated as battery devices in the Energy Dashboard of Domoticz (as shown before).
 
-Other possibilities and use your imagination :
+<b>Other possibilities and use your imagination :</b>
   * Marstek modbus registers are published, you can use these wisely.
   * Can be used with other modbus devices.
 
