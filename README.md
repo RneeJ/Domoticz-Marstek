@@ -27,25 +27,25 @@ Toolpath :
 <b>Connecting to PUSR-DR134</b>    
 <img src="https://github.com/user-attachments/assets/f4eed6a8-ce7b-4c4f-8bcf-92a484edf0b6" width="200">
 
-From the twisted cables use :
+From the twisted (Marstek RS485) cable use :
   * Yellow to A,
   * Red to B ;
   * the Black cable connect to - (not GND)
 
 From the cables connected together use : 
   * Black for + (5volts)
-  * The red cable from this 3-set is not used.
+  * The red cable from this set is not used.
   * <b>Watch out , Your cable can be different , CHECK it with a voltmeter !!</b>
 
 <b>Setting up PUSR-DR134</b>
 
 When your PUSR-DR134 is connected through the modbus-cable to the Marstek battery it is powered and boots up.
-If not the power is not connected the right way.
+If not booting (lights !) the power is not connected the right way.
 
 Connect and configure your LAN setup with the <b>[Setup Software] EthernetTool V1.4.0(Edge computing) </b> available from the PUSR website.
-When setup : connect to the websetuppage  of the device (http://ip.adres.of.device)
+When setup and visible in your LAN : connect to the websetuppage  of the device (http://ip.adres.of.device)
 
- * On page "Portparameter" set up workmode als : MQTT
+ * On page "Port parameter" set up workmode als : MQTT
  * On page " MQTT Gateway " setup your Mqtt broker connection details, select under Publish Config : Transparent Transmission and create a topic : <b>Marstek</b> (used in this config, or whatever you want, without slashes)
  * On page "EDGE Gateway" select working mode "Light Edge" and set "Merge Collect" and "Periodic Reporting" to "V" set "Reporting interval" to 1 second
  * On page "Ponit" (Point) import file 'drv134.json'
@@ -76,14 +76,14 @@ After this you should see messages, to the topic Marstek ,from the DRV134 in you
 </code>
 
 <b>Installing and setting up Mqttmapper plugin:</b>
-  * Install the MqttMapper plugin in Domoticz through the hardware panel (use the plugin setup methode).
+  * If not already installed : install the MqttMapper plugin in Domoticz through the hardware panel (use the plugin setup methode).
   * Set up the connection parameters to connect to your MQTT Broker (IP, credentials etc).
   * download the file <i>MqttMapper.json</i> (or copy+paste lines into an existing) and put it in your Domoticz/plugins/MqttMapper directory
   * restart Domoticz.
 
 After installing : 2 new devices should be found with ID <b>MPWR</b> (Power in Watts in or out) and <b>MSOC</b> (State of Charge). 
 
-These devices can be incorporated as battery devices in the Energy Dashboard of Domoticz.
+These devices can be incorporated as battery devices in the Energy Dashboard of Domoticz (as shown before).
 
 Other possibilities and use your imagination :
   * Marstek modbus registers are published, you can use these wisely.
