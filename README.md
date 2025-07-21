@@ -30,7 +30,7 @@ Toolpath :
 From the twisted (Marstek RS485) cable use :
   * Yellow to A,
   * Red to B ;
-  * the Black cable connect to - (not GND)
+  * the Black cable connect to - (not GND : GND is not used)
 
 From the cables connected together use : 
   * Black for + (5volts)
