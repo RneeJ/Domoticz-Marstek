@@ -12,6 +12,12 @@ This is not a software solution but a device configuration of the Pusr-DR134 for
   * Mosquito (or other MQTT Broker) installed and running. Eventualy use a tool like MQTT Explorer to check.
   * PUSR-DR134 : "Lipstick" Size Serial Device Server for RS485 <b>(Light Edge version !)</b> buy for € 15 on the internet.
 
+<b>Hardware toolpath</b> : Marstek Venus V2 -> Modbuscable -> PUSR-DR134 -> LAN -> Computer
+<b>Software toolpath</b> : (transparent :automatic polling of modbus on Marstek Venus V2) -> Lightedge on PUSR-DR134 -> MQTT Broker (Mosquito) -> MqttMapper -> Domoticz
+
+Result : 
+<img width="497" height="413" alt="Domoticz-result" src="https://github.com/user-attachments/assets/84ad113f-1b7a-42d5-974f-11a1b812934b" />
+
 <b>Setting up the Marstek Venus V2 modbus connection :</b>
   * Marstek delivers a RS485 cable with the battery.
   * If not , you have to build one yourself but that is not difficult.
@@ -26,7 +32,7 @@ From the twisted cables use :
 
 From the cables connected together use the Black for + (5volts)
 The red cable from this 3-set is not used.
-<b>Watch out , Your cable can be different !</b>
+<b>Watch out , Your cable can be different , CHECK it with a voltmeter !!</b>
 
 <b>Installing and settingup Mqttmapper plugin:</b>
   * Install the MqttMapper plugin through the hardware panel.
