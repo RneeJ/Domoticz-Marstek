@@ -1,0 +1,14 @@
+{
+	"MPWR": {
+		"topic": "Marstek",
+                "key":"MPWR",
+		"type": "243", "subtype": "29", "switchtype": "0",
+		"mapping": {"item": "params/r_data/2/value", "multiplier": -1, "digits": 1}
+	},
+	"MSOC": {
+		"topic": "Marstek",
+		"key":"MSOC",
+		"type": "243", "subtype": "6", "switchtype": "0",
+		"mapping": {"item": "params/r_data/1/value", "multiplier": 1, "digits": 1}
+	}
+}
