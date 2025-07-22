@@ -87,7 +87,7 @@ After installing : 2 new devices should be found with ID <b>MPWR</b> (Power in W
 These devices can be incorporated as battery devices in the Energy Dashboard of Domoticz (as shown before) or used elsewhere
 
 <b>Other possibilities and use your imagination :</b>
-  * Marstek modbus registers are published, you can use these wisely.
+  * Marstek modbus registers are published, you can use these wisely. https://duravolt.nl/wp-content/uploads/Duravolt-Plug-in-Battery-Modbus.pdf
   * Can be used with other modbus devices.
 
 <b>Please let me know your solution based on this setup</b>
