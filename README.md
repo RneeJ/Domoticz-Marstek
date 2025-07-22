@@ -10,7 +10,7 @@ This is not a software solution but a device configuration of the Pusr-DR134 for
   * Domoticz installed and running (basic knowledge is enough)
   * Domoticz Mqttmapper plugin installed  (https://github.com/FlyingDomotic/domoticz-mqttmapper-plugin)   
   * Mosquito (or other MQTT Broker) installed and running. Eventualy use a tool like MQTT Explorer to check.
-  * PUSR-DR134 : "Lipstick" Size Serial Device Server for RS485 <b>(Light Edge version !)</b> buy for € 15 on the internet.
+  * PUSR-DR134 : "Lipstick" Size Serial Device Server for RS485 <b>(Light Edge version !)</b> buy for € 15 on the internet. (Firmware Version：V4304)
 
 Toolpath :
   * <b>Hardware toolpath</b> : Marstek Venus V2 -> Modbuscable -> PUSR-DR134 -> LAN -> Computer
