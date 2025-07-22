@@ -1,4 +1,6 @@
 # Domoticz-Marstek
+WARNING : when using this solution you lose the connection to the Marstek database, no data of useage will be shown in the app. 
+
 Connecting Marstek Venus 5.12Kwh V2 (home battery) to Domoticz (home automation system) using PUSR-DR134.(fixed LAN, not Wifi)
 
 Forget a dedicated plugin, forget Node-Red, forget programming this is an easy to setup solution.
