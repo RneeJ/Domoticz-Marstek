@@ -54,9 +54,9 @@ When setup and visible in your LAN : connect to the websetuppage  of the device 
 
 The file 'dr134.json' sets the correct parameters for the registers to (automaticly) poll on the Marstek Venus, you can add and/or change.
 
-After this you should see messages, to the topic Marstek ,from the DRV134 in your MQTT Broker like this :
+After this you should see messages, to the topic Marstek ,from the DR134 in your MQTT Broker like this :
 
-<code>
+````
 {
   "params": {
     "dir": "up",
@@ -75,7 +75,7 @@ After this you should see messages, to the topic Marstek ,from the DRV134 in you
     ]
   }
 }
-</code>
+````
 
 <b>Installing and setting up Mqttmapper plugin:</b>
   * If not already installed : install the MqttMapper plugin in Domoticz through the hardware panel (use the plugin setup methode).
