@@ -5,7 +5,7 @@ Connecting Marstek Venus 5.12Kwh V2 (home battery) to Domoticz (home automation 
 It seems that setting te reporting time to 10 seconds you can still see data in the app.
 But even if no data is stored you can still use the app to control the battery.
 
-Forget a dedicated plugin, forget Node-Red, forget programming this is an easy to setup solution.
+Forget a dedicated plugin, forget Node-Red, forget programming ; <b>this is an easy to setup solution.</b>
 
 This is not a software solution but a device configuration of the Pusr-DR134 for use with the already avaiable general purpose plugin : <b>MqttMapper by FlyingDomotic</b>
 
