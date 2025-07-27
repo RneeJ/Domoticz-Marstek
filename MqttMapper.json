@@ -10,5 +10,29 @@
 		"key":"MSOC",
 		"type": "243", "subtype": "6", "switchtype": "0",
 		"mapping": {"item": "params/r_data/1/value", "multiplier": 1, "digits": 1}
+	},
+	"MTCE": {
+		"topic": "Marstek",
+		"key":"MTCE",
+		"type": "113", "subtype": "0", "switchtype": "3",
+		"mapping": {"item": "params/r_data/3/value", "multiplier": 0.01, "digits": 2}
+	},
+	"MTDE": {
+		"topic": "Marstek",
+		"key":"MTDE",
+		"type": "113", "subtype": "0", "switchtype": "3",
+		"mapping": {"item": "params/r_data/4/value", "multiplier": 0.01, "digits": 2}
+	},
+	"MIT": {
+		"topic": "Marstek",
+		"key":"MIT",
+		"type": "80", "subtype": "5", "switchtype": "0",
+		"mapping": {"item": "params/r_data/5/value", "multiplier": 0.1, "digits": 1}
+	},
+	"Battery": {
+		"topic": "Marstek",
+		"key":"Battery",
+		"type": "250", "subtype": "1", "switchtype": "0",
+		"mapping": {"item" : "params/r_data/3/value;~0;params/r_data/4/value;~0;~0;~0", "multiplier": 10, "digits": 2}
 	}
 }
