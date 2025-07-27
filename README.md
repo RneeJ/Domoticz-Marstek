@@ -88,8 +88,8 @@ After this you should see messages, to the topic Marstek ,from the DR134 in your
   * NOTE : The items in the published Mqtt message are not used by <i>parameter name</i> but by <i>item number</i> !! 
   * restart Domoticz.
 
-After installing : 2 new devices should be found with ID <b>MPWR</b> (Power in Watts in or out) and <b>MSOC</b> (State of Charge). 
-
+After installing : 2 (or more) new devices should be found with ID <b>MPWR</b> (Power in Watts in or out) and <b>MSOC</b> (State of Charge) etc.
+ 
 These devices can be incorporated as battery devices in the Energy Dashboard of Domoticz (as shown before) or used elsewhere
 
 <b>Other possibilities and use your imagination :</b>
@@ -101,6 +101,7 @@ These devices can be incorporated as battery devices in the Energy Dashboard of 
 |---------|---------|
 |20250727 | adding total counters, temperature of device and feeding for P1 device to be used as Battery device.|
 |         | 4 new devices are created in Domoticz. The P1/battery device has now the capability to show graphs of usage of the battery|
+|         |         |
 
 <b>Please let me know your solution based on this setup</b>
 
