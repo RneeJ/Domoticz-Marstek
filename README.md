@@ -94,6 +94,12 @@ These devices can be incorporated as battery devices in the Energy Dashboard of 
   * Marstek modbus registers are published, you can use these wisely. https://duravolt.nl/wp-content/uploads/Duravolt-Plug-in-Battery-Modbus.pdf
   * Can be used with other modbus devices.
 
+<b>UPDATES</b>
+|Date     | Comment |
+|---------|---------|
+|20250727 | adding total counters, temperature of device and feeding for P1 device to be used as Battery device.|
+|         | 4 new devices are created in Domoticz. The P1/battery device has now the capability to show graphs of usage of the battery|
+
 <b>Please let me know your solution based on this setup</b>
 
 
