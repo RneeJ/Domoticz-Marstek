@@ -7,7 +7,7 @@ But even if no data is stored you can still use the app to control the battery.
 
 Forget a dedicated plugin, forget Node-Red, forget programming ; <b>this is an easy to setup solution.</b>
 
-This is not a software solution but a device configuration of the Pusr-DR134 for use with the already avaiable general purpose plugin : <b>MqttMapper by FlyingDomotic</b>
+This is not a software solution but a device configuration of the <b>Pusr-DR134</b> for use with the already avaiable general purpose plugin : <b>MqttMapper by FlyingDomotic</b>
 
 <b>Prerequisites :</b>
   * Home battery Marstek Venus V2 running with modbus port and cable
