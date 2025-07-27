@@ -21,6 +21,39 @@
       "magn": "1",
       "report": 0,
       "ampl": "0"
+    },
+    {
+      "key": 3,
+      "name": "MTCE",
+      "sadd": 1,
+      "rtype": 3,
+      "radd": 33000,
+      "dtype": 5,
+      "magn": "1",
+      "report": 0,
+      "ampl": "0"
+    },
+    {
+      "key": 4,
+      "name": "MTDE",
+      "sadd": 1,
+      "rtype": 3,
+      "radd": 33002,
+      "dtype": 5,
+      "magn": "1",
+      "report": 0,
+      "ampl": "0"
+    },
+    {
+      "key": 5,
+      "name": "MIT",
+      "sadd": 1,
+      "rtype": 3,
+      "radd": 35000,
+      "dtype": 1,
+      "magn": "1",
+      "report": 0,
+      "ampl": "0"
     }
   ]
 }
