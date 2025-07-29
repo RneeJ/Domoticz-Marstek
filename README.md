@@ -23,8 +23,13 @@ Toolpath :
 <b>Result : </b>
 
 <img width="497" height="413" alt="Domoticz-result" src="https://github.com/user-attachments/assets/84ad113f-1b7a-42d5-974f-11a1b812934b" />
+<img width="465" height="415" alt="chart" src="https://github.com/user-attachments/assets/89e2d15a-1fd8-40b0-86c0-97e4ed387fc0" />
+<img width="542" height="144" alt="Domoticz-devices" src="https://github.com/user-attachments/assets/d52673aa-6b23-4f2f-9b31-b376432cc503" />
+<img width="434" height="105" alt="usage" src="https://github.com/user-attachments/assets/af972a76-5dcc-4591-8469-32e261579bae" />
 
-<img width="1084" height="288" alt="Domoticz-devices" src="https://github.com/user-attachments/assets/d52673aa-6b23-4f2f-9b31-b376432cc503" />
+
+
+----
 
 <b>Setting up the Marstek Venus V2 modbus connection :</b>
   * Marstek delivers a RS485 cable with the battery.
