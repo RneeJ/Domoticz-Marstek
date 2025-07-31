@@ -8,7 +8,7 @@ Buy at the PUSER store on Alie , with description "Edge Computing MQTT"
 This setup uses firmware version 4304
 
 Currently there is no comparable device with wifi. 
-If no fixed LAN is avaiable (no router nearby ?) you could use a ethernet powerline adapter (currently testing)
+If no fixed LAN is available (no router nearby ?) you could use a ethernet powerline adapter (currently testing)
 
 <b>Setting up the Marstek Venus V2 wit CT003 :</b>
 
@@ -18,7 +18,7 @@ A very nearby (25 cm) old WIFI 4 dedicated router works well in my case.
 The Venus battery and CT003 create their own subnet.
 
 <b>No RS485 cable ?</b>
-At the dutch Tweakers forum for setting up the Marstek for use with HA there is more information avaiable about building the cable.
+At the dutch Tweakers forum for setting up the Marstek for use with HA there is more information available about building the cable.
 thanx to : [superduper1969](https://github.com/Superduper1969)
 
 <b>Known issues</b>
