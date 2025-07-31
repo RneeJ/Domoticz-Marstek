@@ -24,7 +24,7 @@ If no fixed LAN is available (no router nearby ?) you could use a ethernet power
  * The <b>SOC</b> value is not very reliable. When analysing data of SOC and actual usage in Domoticz (!) it seems that when a nearly full or empty shown SOC the battery still goes on for hours ...
  * In my case <b>history</b> in the app got scrambled up and is not shown anymore. I believe this is because when using the Modbus connection there is no data of usage send to the cloud.
 
-<b>Current status</b>
+<b>Current status (31.07.2025)</b>
   * Venus firmware version : V153
   * CT003 : V117
   * App version : V1.6.45
