@@ -110,5 +110,7 @@ These devices can be incorporated as battery devices in the Energy Dashboard of 
 
 <b>Please let me know your solution based on this setup</b>
 
+[More](/docs/readmore.md)
+
 
 
