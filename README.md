@@ -1,9 +1,6 @@
 # Domoticz-Marstek
 Connecting Marstek Venus 5.12Kwh V2 (home battery) over Modbus to Domoticz (home automation system) using PUSR-DR134.(fixed LAN, not Wifi)
 
-<i><b>WARNING</b> : --when using this solution you maybe lose the connection/updating of usage etc to the Marstek cloud database, no data of useage will be stored in the app. Actual usage and SOC is still visible in the app.
-But you can still use the app to control the battery etc.--</i> After update data is shown again in the app.
-
 Forget a dedicated plugin, forget Node-Red, forget programming ; <b>this is an easy to setup solution.</b>
 
 This is not a software solution but a device configuration of the <b>Pusr-DR134</b> for use with the already avaiable general purpose plugin : <b>MqttMapper by FlyingDomotic</b>
